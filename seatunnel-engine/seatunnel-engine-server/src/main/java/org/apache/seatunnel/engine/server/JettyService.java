@@ -19,10 +19,10 @@ package org.apache.seatunnel.engine.server;
 
 import org.apache.seatunnel.shade.org.eclipse.jetty.server.Server;
 import org.apache.seatunnel.shade.org.eclipse.jetty.server.ServerConnector;
-import org.apache.seatunnel.shade.org.eclipse.jetty.servlet.DefaultServlet;
-import org.apache.seatunnel.shade.org.eclipse.jetty.servlet.FilterHolder;
-import org.apache.seatunnel.shade.org.eclipse.jetty.servlet.ServletContextHandler;
-import org.apache.seatunnel.shade.org.eclipse.jetty.servlet.ServletHolder;
+import org.apache.seatunnel.shade.org.eclipse.jetty.ee10.servlet.DefaultServlet;
+import org.apache.seatunnel.shade.org.eclipse.jetty.ee10.servlet.FilterHolder;
+import org.apache.seatunnel.shade.org.eclipse.jetty.ee10.servlet.ServletContextHandler;
+import org.apache.seatunnel.shade.org.eclipse.jetty.ee10.servlet.ServletHolder;
 import org.apache.seatunnel.shade.org.eclipse.jetty.util.ssl.SslContextFactory;
 
 import org.apache.seatunnel.engine.common.config.SeaTunnelConfig;
@@ -52,8 +52,8 @@ import com.hazelcast.spi.impl.NodeEngineImpl;
 import lombok.extern.slf4j.Slf4j;
 import shade.org.apache.commons.lang3.StringUtils;
 
-import javax.servlet.DispatcherType;
-import javax.servlet.MultipartConfigElement;
+import jakarta.servlet.DispatcherType;
+import jakarta.servlet.MultipartConfigElement;
 
 import java.io.IOException;
 import java.net.DatagramSocket;

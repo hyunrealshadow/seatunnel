@@ -73,7 +73,7 @@
 
         <dependency>
             <groupId>org.apache.seatunnel</groupId>
-            <artifactId>seatunnel-jetty9-9.4.56</artifactId>
+            <artifactId>seatunnel-jetty12-12.1.1</artifactId>
             <version>${project.version}</version>
             <classifier>optional</classifier>
         </dependency>

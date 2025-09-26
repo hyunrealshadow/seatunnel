@@ -33,7 +33,7 @@
         <module>seatunnel-hazelcast</module>
         <module>seatunnel-janino</module>
         <module>seatunnel-scala-compiler</module>
-        <module>seatunnel-jetty9-9.4.56</module>
+        <module>seatunnel-jetty12-12.1.1</module>
         <module>seatunnel-hadoop-aws</module>
         <module>seatunnel-arrow</module>
         <module>seatunnel-hikari</module>
