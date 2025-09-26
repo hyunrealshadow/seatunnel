@@ -83,6 +83,10 @@
             <version>${jakarta.servlet-api}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+        </dependency>
 
         <!-- test -->
         <dependency>
@@ -111,7 +115,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.seatunnel</groupId>
-            <artifactId>seatunnel-hadoop3-3.1.4-uber</artifactId>
+            <artifactId>seatunnel-hadoop3-3.4.2-uber</artifactId>
             <version>${project.version}</version>
             <classifier>optional</classifier>
             <scope>provided</scope>
