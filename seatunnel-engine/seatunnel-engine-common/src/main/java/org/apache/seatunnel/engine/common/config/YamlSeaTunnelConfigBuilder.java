@@ -29,6 +29,7 @@ import com.hazelcast.jet.impl.util.ExceptionUtil;
 import lombok.NonNull;
 
 import java.io.InputStream;
+import java.util.Collections;
 import java.util.Properties;
 
 import static com.hazelcast.internal.config.yaml.W3cDomUtil.asW3cNode;
@@ -88,7 +89,7 @@ public class YamlSeaTunnelConfigBuilder extends AbstractYamlConfigBuilder {
             seatunnelRoot = yamlRootNode;
         }
 
-        YamlDomChecker.check(seatunnelRoot);
+        YamlDomChecker.check(seatunnelRoot, Collections.singleton(SeaTunnelConfigSections.SEATUNNEL.name));
 
         Node w3cRootNode = asW3cNode(seatunnelRoot);
         replaceVariables(w3cRootNode);
