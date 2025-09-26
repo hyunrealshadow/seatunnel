@@ -105,7 +105,7 @@
                 <json-smart.version>2.4.7</json-smart.version>
                 <aws-java-sdk.version>1.12.791</aws-java-sdk.version>
                 <netty-buffer.version>4.1.89.Final</netty-buffer.version>
-                <hive.exec.version>3.1.3</hive.exec.version>
+                <hive.exec.version>4.1.0</hive.exec.version>
                 <hive.jdbc.version>3.1.3</hive.jdbc.version>
                 <aliyun.sdk.oss.version>3.4.1</aliyun.sdk.oss.version>
                 <jdom.version>1.1</jdom.version>
