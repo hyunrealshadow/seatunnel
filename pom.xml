@@ -162,6 +162,7 @@
         <prometheus.simpleclient.version>0.16.0</prometheus.simpleclient.version>
         <enableSourceJarCreation>true</enableSourceJarCreation>
 
+        <hadoop-common.version>3.4.2</hadoop-common.version>
         <hadoop-aws.version>3.4.2</hadoop-aws.version>
         <software.amazon.awssdk.version>2.31.30</software.amazon.awssdk.version>
         <arrow.version>15.0.1</arrow.version>

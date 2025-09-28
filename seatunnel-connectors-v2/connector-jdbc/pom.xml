@@ -47,7 +47,8 @@
         <hikari.version>4.0.3</hikari.version>
         <postgis.jdbc.version>2.5.1</postgis.jdbc.version>
         <kingbase8.version>8.6.0</kingbase8.version>
-        <hive.jdbc.version>3.1.3</hive.jdbc.version>
+        <hadoop-common.version>3.4.2</hadoop-common.version>
+        <hive.jdbc.version>4.1.0</hive.jdbc.version>
         <oceanbase.jdbc.version>2.4.12</oceanbase.jdbc.version>
         <xugu.jdbc.version>12.2.0</xugu.jdbc.version>
         <iris.jdbc.version>3.0.0</iris.jdbc.version>
@@ -176,6 +177,18 @@
                 <artifactId>kingbase8</artifactId>
                 <version>${kingbase8.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-common</artifactId>
+                <version>${hadoop-common.version}</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.avro</groupId>
+                        <artifactId>avro</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.hive</groupId>
@@ -336,6 +349,10 @@
         <dependency>
             <groupId>cn.com.kingbase</groupId>
             <artifactId>kingbase8</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.hive</groupId>
