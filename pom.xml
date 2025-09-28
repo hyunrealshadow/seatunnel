@@ -139,7 +139,8 @@
         <testcontainer.version>1.17.6</testcontainer.version>
         <spotless.version>2.29.0</spotless.version>
         <jsqlparser.version>4.9</jsqlparser.version>
-        <json-path.version>2.7.0</json-path.version>
+        <json-path.version>2.9.0</json-path.version>
+        <json-smart.version>2.6.0</json-smart.version>
         <groovy.version>4.0.16</groovy.version>
         <scala.version>2.12.15</scala.version>
         <jetty.version>12.1.1</jetty.version>
