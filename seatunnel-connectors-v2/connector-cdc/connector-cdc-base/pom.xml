@@ -67,6 +67,10 @@
                         <groupId>com.github.luben</groupId>
                         <artifactId>zstd-jni</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.kafka</groupId>
+                        <artifactId>connect-runtime</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
