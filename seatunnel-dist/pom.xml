@@ -105,6 +105,7 @@
                 <json-smart.version>2.6.0</json-smart.version>
                 <aws-java-sdk.version>1.12.791</aws-java-sdk.version>
                 <netty-buffer.version>4.1.89.Final</netty-buffer.version>
+                <netty.version>4.2.6.Final</netty.version>
                 <hive.exec.version>4.1.0</hive.exec.version>
                 <hive.jdbc.version>4.1.0</hive.jdbc.version>
                 <aliyun.sdk.oss.version>3.4.1</aliyun.sdk.oss.version>
@@ -855,6 +856,17 @@
                     <artifactId>hadoop-common</artifactId>
                     <version>${hadoop-common.version}</version>
                     <scope>provided</scope>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>io.netty</groupId>
+                            <artifactId>netty-handler</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+                <dependency>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-handler</artifactId>
+                    <version>${netty.version}</version>
                 </dependency>
                 <dependency>
                     <groupId>org.apache.hive</groupId>
